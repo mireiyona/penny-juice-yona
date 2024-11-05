@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1 {
+Font-family: arial;
+margin-top: auto;
+margin-bottom: auto;
+font-size: 15px;
+}
+
+.header {
+    background-color: lightgray;
+width: 100%;
+height: 30px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: auto;
+margin-top: auto;
+}
+
+body{
+    Font-family: Helverica, Arial;
+    margin-bottom: auto;
+    margin-top: auto;
+    }
+
+.container{
+    background-color: white;
+    width:100%;
+    height:200px;
+}
+
+.logo img  {
+display:block;
+width:250px;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+.nav {
+width: 100%;
+background-color: white;
+line-height: 0px;
+float: left;
+}
+.nav ul {
+float: left;
+list-style: none;
+position: relative;
+}
+.nav ul li {
+float: left;
+list-style: none;
+position: relative;
+}
+.nav ul li a {
+display: block;
+font-family: arial;
+color: black;
+font-size: 14px;
+padding: 25px 25px;
+text-decoration: none;
+}
+.nav ul li a:hover {
+display: block;
+background-color: orange;
+}
+
+.nav ul li ul li {
+padding: 5px 5px;
+}
+
+
+
+
+
+
+
+
+.slider img {
+display:block;
+width: 850px;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+.slider {
+background-color: yellowgreen;
+  float: center;
+  width: 100%;
+  padding: 0px;
+　height:auto;
+}
+
+
+/* Two image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0px;
+}
+
+   /* 50% right white */
+.column {
+    background: yellow;
+
+   /* 50% left white */
+    background: orange; 
+}
+
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+
+
+
+
+

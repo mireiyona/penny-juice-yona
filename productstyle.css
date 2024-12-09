@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1 {
+Font-family: arial;
+margin-top: auto;
+margin-bottom: auto;
+font-size: 15px;
+}
+
+.header {
+    background-color: lightgray;
+padding: 20px 0;
+position: relative;
+bottom: 0;
+}
+
+body{
+    Font-family: Helverica, Arial;
+    margin-bottom: auto;
+    margin-top: auto;
+    }
+
+.container{
+    background-color: white;
+    width:100%;
+    height:200px;
+}
+
+.logo img  {
+display:block;
+width:250px;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+/* Navigation Bar Styles */
+.navbar {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: lighter;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    color: orange; /* Change color on hover */
+}
+
+.nav-item:active {
+    color: #0056b3; /* Slightly darker color when clicked */
+}
+
+
+
+/* Style for the image buttons */
+.image-button {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    display: flex;
+    gap: 10px;  /* Space between buttons */
+}
+
+/* Style for each image */
+.image-button img {
+    width: 150px;  /* Set the size of the image buttons */
+    height: auto;
+    border: none;
+    cursor: pointer;
+}
+
+/* Optional: Hover effect */
+.image-button img:hover {
+    opacity: 0.8;  /* Slight transparency effect when hovered */
+}
+
+/* Position for the second image button */
+.image-button:nth-child(2) {
+    right: 40px;  /* Adjust right position to space the buttons */
+}
+
+
+        /* Basic reset for margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Container for the juice boxes */
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);  /* 3 boxes per row */
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Styling for each juice box */
+        .product-box {
+            width: 100%;
+            height: 200px;
+            
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Optional juice product image */
+        .product-box img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+        }
+
+        /* Text label or product title */
+        .product-box .product-label {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: skyblue;
+        }
+
+  .product-box .product-label2 {
+            position: absolute;
+            bottom: 20px;
+            left: 400px;
+            font-size: 12px;
+            font-weight: bold;
+            color: darkgray;
+        }
+
+        /* Hover effect for the boxes */
+        .product-box:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+ 
+
+/* Footer styling */
+.footer {
+    background-color: lightgray;
+    color:white;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    bottom: 0;
+}
+
+.footer-left {
+    font-size: 14px;
+}
+
+.footer-right .social-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-right .social-links li {
+    display: inline-block;
+}
+
+.footer-right .social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-right .social-links a:hover {
+    color: #3498db; /* Highlight color on hover */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-right .social-links {
+        justify-content: center;
+    }
+}
